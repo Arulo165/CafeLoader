@@ -13,9 +13,9 @@
 #include "globals.h"
 #include "handler.h"
 
-#include <fcntl.h>     // Für O_RDONLY und open()
-#include <unistd.h>    // Für close(), read()
-#include <sys/stat.h>  // Für struct stat und stat()
+#include <fcntl.h>    
+#include <unistd.h>    
+#include <sys/stat.h>  
 
 #define FS_MAX_LOCALPATH_SIZE           511
 #define FS_MAX_MOUNTPATH_SIZE           128
@@ -24,7 +24,7 @@
 WUPS_PLUGIN_NAME("CafeLoader");
 WUPS_PLUGIN_DESCRIPTION("Loader for custom code.");
 WUPS_PLUGIN_VERSION("v1.1");
-WUPS_PLUGIN_AUTHOR("AboodXD & JohnP55");
+WUPS_PLUGIN_AUTHOR("AboodXD, Arulo & JohnP55");
 WUPS_PLUGIN_LICENSE("GPL");
 
 WUPS_USE_WUT_DEVOPTAB();
