@@ -35,7 +35,7 @@ bool getStat(FSClient *client, FSCmdBlock *block,
         sdPath = "/vol/" + titleID + sdPath.substr(4);
     }
 
-    std::string fpath = "sd:/cafeloader";
+    std::string fpath = "fs:/vol/external01/cafeloader";
     fpath += sdPath;
 
     returnedStat->flags = (FSStatFlags)0;
@@ -130,7 +130,7 @@ bool openFile(FSClient *client, FSCmdBlock *block,
         sdPath = "/vol/" + titleID + sdPath.substr(4);
     }
 
-    std::string fpath = "sd:/cafeloader";
+    std::string fpath = "fs:/vol/external01/cafeloader";
     fpath += sdPath;
 
     if (strcmp(mode, "r") == 0 || strcmp(mode, "r+") == 0) {
